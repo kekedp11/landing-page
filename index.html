@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Static Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">MyWebsite</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <button id="darkToggle" class="btn">Dark</button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to My Website</h1>
+        <p>Belajar HTML & CSS step by step sampai jago</p>
+        <button class="btn" id="scrollBtn">Get Started</button>
+    
+    <section class="features" id="=features">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Fast</h3>
+                    <p>Website ringan dan cepat diakses.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h3>Modern</h3>
+                    <p>Desain clean dan responsif.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h3>Simple</h3>
+                    <p>Kode mudah dipahami dan dikembangkan.</p>
+                </div>
+            </div>
+
+        </div>
+
+    <section class="testimonials">
+        <h2>What Our Users Say</h2>
+
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <p>"This website changed the way i work. Simple and powerfull"</p>
+                <h4>- John Doe</h4>
+            </div>
+
+            <div class="testimonial-card">
+                <p>"Clean design and super fast performance."</p>
+                <h4>- Sarah Lee</h4>
+            </div>
+
+            <div class="testimonial-card">
+                <p>"Highly recommended for beginners and professionals."</p>
+                <h4>- Michael Smith</h4>
+            </div>
+        </div>
+
+    <section class="cta">
+        <h2>Readyto Get Started?</h2>
+        <p>Join us today and build something amazing.</p>
+        <a href="#" class="cta-btn">Get Started</a>
+    </section>
+
+    <main class="container">
+        <div class="card">
+            <h2>Card 1</h2>
+            <p>Ini card pertama. Bisa diisi dengan text atau info lain</p>
+        </div>
+
+        <div class="card">
+            <h2>Card 2</h2>
+            <p>Ini card kedua. Layout pakai Flexbox.</p>
+        </div>
+
+        <div class="card">
+            <h2>Card 3</h2>
+            <p>Kalau layar kecil, card akan turun kebawah</p>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Mini Project. All rights reserved.
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h3>YourBrand</h3>
+                <p>Building modern and simple websites for everyone.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <p>Instagram</p>
+                <p>Twitter</p>
+                <p>LinkedIn</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 YourBrand. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        const scrollBtn = document.getElementById("scrollBtn");
+
+        scrollBtn.addEventListener("click", function () {
+            document.getElementById("features").scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+
+        const toggleBtn = document.getElementById("darkToggle")
+
+        toggleBtn.addEventListener("click", function () {
+            document.body.classList.toggle("dark");
+        });
+    </script>
+
+</body>
+</html>
